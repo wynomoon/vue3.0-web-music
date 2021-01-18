@@ -2,7 +2,9 @@
     <header class="header" :class="`${themeType}-bg-primary_1`">
         <div class="header-title">
             <i class="iconfont icon-music" :class="`${themeType}-cl-primary_1`"></i>
-            <span class="header-title_name">好 听 音 乐</span>
+            <span class="header-title_name">
+             <router-link to="/" class="home">好 听 音 乐</router-link>
+           </span>
         </div>
         <div class="header-history">
             <i class="iconfont icon-preview-left" :class="`${themeType}-bg-primary_2`" @click="handleBack"></i>
@@ -69,6 +71,10 @@ export default defineComponent({
 
             .header-title_name {
                 font-size: 18px;
+
+                .home{
+                  color: #fff;
+                }
             }
         }
 
