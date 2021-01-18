@@ -29,6 +29,7 @@
       <div class="item-options">
         <i class="iconfont icon-song-like"></i>
         <i class="iconfont icon-song-download"></i>
+        <i class="iconfont icon-lyric-play" @click="handlePlaySong(index)"></i>
       </div>
       <div class="item-title">
         <div class="title-name">
@@ -119,6 +120,7 @@ export default defineComponent({
     .iconfont {
       font-size: 24px;
       color: #888;
+      cursor: pointer;
     }
   }
 
